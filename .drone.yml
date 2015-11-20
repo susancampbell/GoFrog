@@ -1,0 +1,10 @@
+build:
+   image:golang
+   environment:
+      - GOBIN=/drone/bin
+   commands:
+      - go get
+      - go build
+      - go test
+
+
